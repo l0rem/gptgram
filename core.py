@@ -10,7 +10,9 @@ from decouple import config
 
 api_id = config('API_ID')
 api_hash = config('API_HASH')
-key = config('DECRYPTION_KEY')
+
+# key = config('DECRYPTION_KEY')
+key = Fernet.generate_key()
 
 chat_id = 752041694
 # chat_id = 'ajxterry'
