@@ -1,1 +1,1 @@
-me.session filter=git-crypt diff=git-crypt
+*.session filter=git-crypt diff=git-crypt
