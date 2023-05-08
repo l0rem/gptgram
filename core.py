@@ -12,21 +12,21 @@ api_id = config('API_ID')
 api_hash = config('API_HASH')
 
 # key = config('DECRYPTION_KEY')
-key = Fernet.generate_key()
+# key = Fernet.generate_key()
 
 chat_id = 752041694
 # chat_id = 'ajxterry'
 dev_chat_id = -1001768006261
 
-cipher_suite = Fernet(key)
+# cipher_suite = Fernet(key)
 
-with open("encrypted_session_file.session", "rb") as file:
-    encrypted_data = file.read()
-
-decrypted_data = cipher_suite.decrypt(encrypted_data)
-
-with open("me.session", "wb") as file:
-    file.write(decrypted_data)
+# with open("encrypted_session_file.session", "rb") as file:
+#     encrypted_data = file.read()
+#
+# decrypted_data = cipher_suite.decrypt(encrypted_data)
+#
+# with open("me.session", "wb") as file:
+#     file.write(decrypted_data)
 
 
 openai_key = config('OPENAI_API_KEY')
